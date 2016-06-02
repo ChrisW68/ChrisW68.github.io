@@ -132,29 +132,10 @@ em {
 strong {
   font-weight: bold;
 }
-
-img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 739px;
-  padding: 5px;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
-
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
-}
-
-p img {
-  display: inline;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-  border: none;
+occupation,.occupation{
+	color: white;
+	font-size: 28px;
+	align-content:center;
 }
 
 pre, code {
@@ -287,32 +268,39 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+background-image:url(../images/hi-tech-computer-keyboard-blue-red-website-header.jpg);
+width: 100%;
+height: auto;
 }
 
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
 }
 
-#project_title {
-  margin: 0;
+#my_title {
+  margin: -30px;
   color: #fff;
   font-size: 42px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
 
-#project_tagline {
+#occupation_tagline, .job{
+  margin: center;
   color: #fff;
   font-size: 24px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+}
+
+#skill-templates  {
+  margin: 0;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
+	
 }
 
 #downloads {
