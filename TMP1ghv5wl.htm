@@ -197,7 +197,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color:white;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -209,7 +209,7 @@ h1 {
 
 h2 {
   padding-bottom: 10px;
-  font-size: 32px;
+  font-size: 5px;
   background: url('images/bg_hr.png') repeat-x bottom;
 }
 
@@ -392,7 +392,7 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  right: 10px;
+  right: -200px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
@@ -406,7 +406,10 @@ Full-Width Styles
 #header_wrap {
 background-image:url(images/hi-tech-computer-keyboard-blue-red-website-header.jpg);
 width: 100%;
-height: auto;
+position: absolute;
+top: 0px;
+left: 0px;
+
 }
 
 #header_wrap .inner {
@@ -1663,7 +1666,7 @@ a {
 a:hover,
 a:focus {
   color: #23527c;
-  text-decoration: underline;
+  text-decoration: blink underline;
 }
 a:focus {
   outline: thin dotted;
@@ -5874,12 +5877,45 @@ a.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  background-color:#CFCBCB;
+  border-radius: 0px 0px 25px 25px;
+  box-shadow:#4D494A;
 }
+
+
 .panel-heading {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #13deed;
+  background-image: -webkit-linear-gradient(top, #13deed, #2772a1);
+  background-image: -moz-linear-gradient(top, #13deed, #2772a1);
+  background-image: -ms-linear-gradient(top, #13deed, #2772a1);
+  background-image: -o-linear-gradient(top, #13deed, #2772a1);
+  background-image: linear-gradient(to bottom, #13deed, #2772a1);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  text-shadow: 1px 1.5px 3px grey;
+  -webkit-box-shadow: 1px 1.5px 3px grey;
+  -moz-box-shadow: 1px 1.5px 3px grey;
+  box-shadow: 0px 1px 3px grey;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.panel-heading:hover {
+  background: #98eb2a;
+  background-image: -webkit-linear-gradient(top, #98eb2a, #13991c);
+  background-image: -moz-linear-gradient(top, #98eb2a, #13991c);
+  background-image: -ms-linear-gradient(top, #98eb2a, #13991c);
+  background-image: -o-linear-gradient(top, #98eb2a, #13991c);
+  background-image: linear-gradient(to bottom, #98eb2a, #13991c);
+  text-decoration: none;
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
@@ -5887,8 +5923,9 @@ a.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 32px;
   color: inherit;
+  text-shadow: 1px 2px 3px white;
 }
 .panel-title > a,
 .panel-title > small,
@@ -7203,7 +7240,7 @@ button.close {
       <div class="panel-group" id="accordion1">
         <div class="panel panel-default">
           <div class="panel-heading">
-            	<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1"><strong>Coherent, Inc.</strong></a></h4>
+            	<h1 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1"><strong>Coherent, Inc.</strong></a></h1>
             	<h4><em>Mechanical Engineer</em></h4>
           		<p>Contracted through Syncro Design, LLC.</p>
           </div>
@@ -7219,8 +7256,8 @@ button.close {
         </div>
         <div class="panel panel-default">
           <div class="panel-heading">
-   		    <h1 class="panel-title" row><a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1" font-size="200%"><strong>Prosper IT Consulting</strong></a></h1>
-                	<h2 scope="row"><em>Live Project-Software Developer - Volunteer</em></h2>
+   		    <h1 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1"><strong>Prosper IT Consulting</strong></a></h1>
+                	<h4><em>Live Project-Software Developer - Volunteer</em></h4>
                   	<p>03/2016-04/2016</p>
           </div>
           <div id="collapseTwo1" class="panel-collapse collapse">
@@ -7236,7 +7273,7 @@ button.close {
         </div>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1"><strong>HP Inc.</strong></a></h4>
+            <h2 class="panel-title"><a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1"><strong>HP Inc.</strong></a></h2>
             <h4><em>Mechanical Engineer</em></h4>
           <p>Contracted through Syncro Design, LLC.</p>
           </div>
