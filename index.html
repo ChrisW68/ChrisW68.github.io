@@ -2,7 +2,7 @@
 <html>
 
   <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="description" content="Chrisw68.GitHub.io : Portfolio Webpage">
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
@@ -19,24 +19,21 @@
   </head>
 
   <body>
-
-    <!-- HEADER -->
-  <div id="header_wrap" class="outer col-lg-5" width="full">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a>
-		  <img src="images/IMG_8665.jpg" class="img-circle" title="myimage"/>
-          <li><h1 id="my_title" class="name">Chris Wiseman</h1></li>
-          <li><h2 class="occupation">Software Developer</h2></li>
-</header>
-  </div>
+   <!-- HEADER -->
+  	<div id="header_wrap" class="outer col-lg-5" width="full">
+    	<header class="inner">
+        	<a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a>
+		    <img src="images/IMG_8665.jpg" class="img-circle" title="myimage"/>
+            <li><h1 id="my_title" class="name">Chris Wiseman</h1></li>
+            <li><h2 class="occupation">Software Developer</h2></li>
+        </header>
+    </div>
 
     <!-- MAIN CONTENT -->
- <section class="skill-section">
- 
- 
-    <div id="main_content_wrap" class="outer">
-    <h3><a id="designer-templates" class="anchor" href="#skill-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Skills</h3>
-      <section id="main_content" class="inner">
+	<section class="skill-section" >
+    	<div class="outer">
+    		<h3><a class="anchor" href="#skill-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Skills</h3>
+      <section class="inner">
         <h3>
 
       <div id="carousel1" class="carousel slide" data-ride="carousel">
@@ -172,22 +169,38 @@
         
       </div>
     </div>
-<h3>
-  <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h3>
+<article class="fluid textContainer" id="secondaryStyling">
+	<h1 class="h1-projects"><strong>Projects</strong></h1>
+    <section class="fluid secondarySection zeroMargin_desktop zeroMargin_tablet" padding-left="5px">
+      <h2 class="fluid secondaryHeading headingStyle">Project-Prosper IT Consulting</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+      <p class="contentArea">This was my first project.  The project was to add more functionality to the companies webstite and reduce the memory useage. </p>
+      <p><em>Task performed:</em></p>
+      <p align="left">Website had identical separate headers and footers for each webpage.  This reduced the memory useage per page by 30% on average</p>
+      <p align="left">The customer wanted a video to autostart on initial load of webpage.</p>
+      <p align="left">The customer asked for their logo to appear first on initial load of the webpage.</p>
+      <p>What I did:</p>
+      <p align="left">I wrote a two PHP scripts: one for the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/header.php">header</a> and one for the footer.  This allowed the website to the header and footer from one location</p>
+      <p align="left">Added additional script to the video to have a automated time delay of 2 seconds to allow the page to load and then start the video.  I wrote the script in this way to reduce the memory useage and still allow the video to autostart</p>
+      <p> The existing modal-content was not proportioned currently.  So, I resized the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/Modal-Content.php" title="modal" >modal</a>.
+      <p align="left">To have the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/index.php" title="logo Modifications">logo</a> appear first and the website load after.  I added a fadeout statement after a 3 second delay which allow the logo appear and then fadeout to the webpage.</p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    </section>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+    <section class="fluid secondarySection hide_mobile">
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+      <h2 class="fluid secondaryHeading headingStyle">Project-Scheduling</h2>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-  </section>
-  </div>
+      <p class="contentArea">This project was to setup a monthly autoscheduling program for nursing at a local hospital</p>
+<p align="left">2 work schedules that the program must accomandate for:</p>
+      <p align="center">10 hour shift, 4 days a week</p>
+      <p align="center">8 hour shift, 5 days a week</p>
+
+    </section>
+
+  </article>
+
+
 
     <!-- FOOTER  -->
   <div id="footer_wrap" class="outer">

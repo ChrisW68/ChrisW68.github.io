@@ -43,6 +43,11 @@ audio:not([controls]) {
 template {
   display: none;
 }
+
+skill-section {
+	opacity: .50%;
+
+}
 a {
   background-color: transparent;
 }
@@ -1090,7 +1095,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+ 
 }
 input,
 button,
@@ -6103,8 +6108,10 @@ button.close {
   border-right-width: 0;
   border-left-color: #fff;
 }
-.carousel {
+.carousel, carousel-control, .right {
   position: relative;
+ 
+  
 }
 .carousel-inner {
   position: relative;
