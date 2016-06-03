@@ -1149,11 +1149,19 @@ figure {
           transition: all .2s ease-in-out;
 }
 .img-circle {
-  border-radius: 80%;
+  border-radius: 120%;
   border: 2px ridge #ED9709;
   box-shadow: 0 3px 30px grey inset;
   width: 300px;
   margin-bottom: 50px;
+  -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
+}
+@-moz-keyframes spin { 25% { -moz-transform: rotateX(20deg); } }
+@-webkit-keyframes spin { 25% { -webkit-transform: rotateX(20deg); } }
+@keyframes spin { 25% { -webkit-transform: rotateX(20deg); transform:rotatex(20deg); } }
+  
  
 }
 

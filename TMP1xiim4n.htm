@@ -400,6 +400,8 @@ form {
   padding: 20px;
 }
 
+
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -1749,13 +1751,19 @@ figure {
           transition: all .2s ease-in-out;
 }
 .img-circle {
-  border-radius: 80%;
+  border-radius: 120%;
   border: 2px ridge #ED9709;
   box-shadow: 0 3px 30px grey inset;
   width: 300px;
   margin-bottom: 50px;
- 
+  -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
 }
+@-moz-keyframes spin { 25% { -moz-transform: rotateX(20deg); } }
+@-webkit-keyframes spin { 25% { -webkit-transform: rotateX(20deg); } }
+@keyframes spin { 25% { -webkit-transform: rotateX(20deg); transform:rotatex(20deg); } }
+  
 
 
 hr {
@@ -5937,6 +5945,7 @@ a.list-group-item-danger.active:focus {
   position: center;
   width: 300px;
   padding: 5px;
+  margin: 0px;
   background-color:#CFCBCB;
   border-radius: 0px 0px 5px 5px;
 }
@@ -5972,7 +5981,7 @@ a.list-group-item-danger.active:focus {
   font-family: Arial;
   color: #ffffff;
   font-size: 18px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 10px;
   text-decoration: none;
 }
 
@@ -7269,7 +7278,7 @@ button.close {
 	<div id="header_wrap" class="outer col-lg-12" width="full">
     	<header class="inner">
         	<left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a></left>
-		    <center><img src="images/IMG_8665.jpg" alt="mypix" class="img-circle" title="myimage"/></center>
+            <center><img src="images/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="myimage"/></center>
             <center><li><h1 id="my_title" class="name">Chris Wiseman</h1></li>
             <li><h2 class="occupation">Software Developer</h2></li></center>
         </header>
@@ -7303,10 +7312,10 @@ button.close {
           
     	</div>
        </div>
-       </div>
-        </section>
-<section id="Experience" class="Experience-section">
-<h3 class="panel-heading">Experience</h3>
+      </div>
+</section>
+<section id="experience" class="experience-section">
+<h3 class="panel-heading2" class="panel-title2">Experience</h3>
 
 <div class="panel-group" id="accordion2">
       <div class="panel-group" id="accordion1">
