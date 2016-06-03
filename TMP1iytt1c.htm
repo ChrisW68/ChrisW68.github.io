@@ -188,7 +188,6 @@ body {
   background-image:url(images/DSC02451.JPG);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 100%;
 
 }
@@ -267,6 +266,25 @@ anchor, .h3{
 footer a {
   color: #F2F2F2;
   text-decoration: underline;
+}
+#header {
+	margin-top: 20px;
+	padding: 10px 0px 5px 0px;
+}
+
+#skills {
+	margin-top: 350px;
+	height: 250px;
+}
+#Experience {
+	margin-top: 75px;
+}
+
+#Projects-header {
+	text-align: center;
+	background-color: white;
+	margin-top: 75px;
+	opacity: .40%;
 }
 
 em {
@@ -399,10 +417,10 @@ Full-Width Styles
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
-  right: -200px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
+  top: 0px;
+ position: absolute;
+ right: 0px;
+ padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
@@ -413,9 +431,9 @@ Full-Width Styles
 
 #forkme_banner:hover {
 	display: block;
-  position: absolute;
+  position: relative;
   top:0;
-  right: -200px;
+  right: 20px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #EC891B;
@@ -1732,7 +1750,7 @@ figure {
   border: 2px ridge #ED9709;
   box-shadow: 0 3px 30px grey inset;
   width: 300px;
-  margin-left: 400px;
+ 
 }
 
 
@@ -5893,20 +5911,41 @@ a.list-group-item-danger.active:focus {
   line-height: 1.3;
 }
 .panel {
+	margin: 
+  width: 250px;
+  text-align:center;
   margin-bottom: 20px;
-  background-color: #fff;
-  border: 1px solid transparent;
+  opacity: .85;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  
 }
 .panel-body {
-  padding: 15px;
+  position: center;
+  width: 300px;
+  padding: 5px;
   background-color:#CFCBCB;
-  border-radius: 0px 0px 25px 25px;
+  border-radius: 0px 0px 5px 5px;
+  opacity: .90;
   box-shadow:#4D494A;
 }
 
+.panel-body-carousel {
+  position: center;
+  width: 300px;
+  padding: 5px;
+  background-color:#CFCBCB;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.panel-body2 {
+  position: center;
+  width: full;
+  padding: 15px;
+  background-color:white;
+  border-radius: 0px 0px 25px 25px;
+  opacity: .95;
+  box-shadow:grey;
+}
 
 .panel-heading {
   padding: 10px 15px;
@@ -5950,7 +5989,7 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 0;
   font-size: 32px;
   color: inherit;
-  text-shadow: 1px 2px 3px white;
+  text-shadow: 1px 2px 3px grey;
 }
 .panel-title > a,
 .panel-title > small,
@@ -6158,12 +6197,12 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid #ddd;
 }
 .panel-default {
-  border-color: #ddd;
+  border-color:transparent;
 }
 .panel-default > .panel-heading {
   color: #333;
   background-color: #f5f5f5;
-  border-color: #ddd;
+  border-color: transparent;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ddd;
@@ -6689,9 +6728,8 @@ button.close {
 }
 .carousel, carousel-control, .right {
   position: relative;
- 
-  
 }
+
 .carousel-inner {
   position: relative;
   width: 100%;
@@ -6700,9 +6738,9 @@ button.close {
 .carousel-inner > .item {
   position: relative;
   display: none;
-  -webkit-transition: .6s ease-in-out left;
-       -o-transition: .6s ease-in-out left;
-          transition: .6s ease-in-out left;
+  -webkit-transition: .4s ease-in-out left;
+       -o-transition: .4s ease-in-out left;
+          transition: .4s ease-in-out left;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -7221,24 +7259,24 @@ button.close {
 
 <body>
    <!-- HEADER -->
-   <section>
+   <section id="header">
 	<div id="header_wrap" class="outer col-lg-5" width="full">
     	<header class="inner">
-        	<a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a>
-		    <img src="images/IMG_8665.jpg" alt="mypix" class="img-circle" title="myimage"/>
+        	<left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a>
+		    <center><img src="images/IMG_8665.jpg" alt="mypix" class="img-circle" title="myimage"/>
             <li><h1 id="my_title" class="name">Chris Wiseman</h1></li>
             <li><h2 class="occupation">Software Developer</h2></li>
         </header>
     </div>
     </section>
-   <section class="skill-section"> 
+   <section id="skills" class="skill-section"> 
    	<!-- MAIN CONTENT -->
     <div>
     	<div class="panel panel-default">
     		<div class="panel-heading">
         		<h3 class="panel-title">Skill</h3>
     		</div>
-           	<div class="panel-body">
+           	<div class="panel-body-carousel col-md-3 col-lg-12">
         	<div class="carousel slide" data-ride="carousel">
           		<div class="carousel-inner" role="listbox">
             		<div class="item active"><img src="images/5.png" alt="First slide image" class="center-block">
@@ -7255,15 +7293,12 @@ button.close {
             		</div>
           		</div>
        		</div>
-          <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel1" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a></div>Skill
+          
     	</div>
-        </section>
         </div>
-        
-
-	
-
-<h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Experience</h3>
+        </section>
+<section id="Experience">
+<h3 class="panel-title">Experience</h3>
 
 <div class="panel-group" id="accordion2">
       <div class="panel-group" id="accordion1">
@@ -7274,7 +7309,7 @@ button.close {
           		<p>Contracted through Syncro Design, LLC.</p>
           </div>
           <div id="collapseOne1" class="panel-collapse collapse in">
-            <div class="panel-body" align="left">
+            <div class="panel-body2" align="left">
             	<li>Developed fixtures for product assembly.</li>
           		<li>Designed product for prototyping and production</li>
           		<li>Experience in Project Management</li>
@@ -7290,13 +7325,13 @@ button.close {
                   	<p>03/2016-04/2016</p>
           </div>
           <div id="collapseTwo1" class="panel-collapse collapse">
-            <div class="panel-body" align="left">
+            <div class="panel-body2" align="left">
             	<li>Redesigned web pages to improve functionality</li>
           		<li>Developed PHP language to support single header/footer format across multiple web pages</li>
           		<li>Redesigned the page to allow page to fit standard browser</li>
           		<li>Developed code to improve accordion effect using JavaScript and CSS</li>
                 <hr />
-          		<h4><b>Skill Set:</b></h4><p> HTML5, JavaScript, PHP, and CSS, Adobe Dreamweaver CC 2015, Scrum project management.</p>
+          		<h4><b>Skill Set:</b></h4><p> <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/index.php">HTML5</a>, <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/tree/master/newWebsite/js">JavaScript</a>, <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/header.php">PHP</a>, and <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/css/style.css">CSS</a>, Adobe Dreamweaver CC 2015, Scrum project management.</p>
             </div>
           </div>
         </div>
@@ -7307,7 +7342,7 @@ button.close {
           <p>Contracted through Syncro Design, LLC.</p>
           </div>
           <div id="collapseThree1" class="panel-collapse collapse">
-            <div class="panel-body" align="left">
+            <div class="panel-body2" align="left">
             	<li>Used root cause analysis to resolve design and manufacturing issues</li>
           		<li>Experience Multi-tasked several different projects simultaneously</li>
           		<li>Performed/Developed product testing based on design criteria</li>
@@ -7321,7 +7356,7 @@ button.close {
             <h4><em>Manufacturing Engineer</em></h4>
           </div>
           <div id="collapseFour1" class="panel-collapse collapse">
-            <div class="panel-body" align="left">
+            <div class="panel-body2" align="left">
             	<li>Programming experience on various Fanuc Robots</li>
           		<li>Reduced cycle time 40% and decreased downtime by 25% by reprogramming robot</li>
           		<li>Developed Process Instructions for all machining and fabrication processes</li>
@@ -7336,7 +7371,7 @@ button.close {
             <h4><em>Sourcing Engineer</em></h4>
           </div>
           <div id="collapseFive1" class="panel-collapse collapse">
-            <div class="panel-body" align="left">
+            <div class="panel-body2" align="left">
             	<li>Developed database to track and report status of projects</li>
           		<li>Worked in a team environment to create new products</li>
           		<li>Project Manager with great attention to detail with the ability to work effectively cross functionally</li>
@@ -7351,7 +7386,7 @@ button.close {
             <h4 col="2"><em>Test Engineer-Contractor</em></h4>
           </div>
           <div id="collapseSix1" class="panel-collapse collapse">
-            <div class="panel-body" align="left">
+            <div class="panel-body2" align="left">
             	<li>Developed standards for creating routers for INFOR MRP system</li>
           		<li>Experience scheduling parts and resource planning</li>
           		<li>Assisted in implementing INFOR and LaborTrak systems</li>
@@ -7365,7 +7400,7 @@ button.close {
             <h4 col="2"><em>Sr. Manufacturing Engineer</em></h4>
           </div>
           <div id="collapseSeven1" class="panel-collapse collapse">
-            <div class="panel-body" align="left">
+            <div class="panel-body2" align="left">
             	<li>Responsible improving CNC router time by 430% by re-programming</li>
           		<li>Lead team on designing and building new jigs and fixtures that improved cycle time by 10%</li>
           		<li>Created CNC milling program by writing new code or modifying exisiting</li>
@@ -7375,7 +7410,10 @@ button.close {
         
       </div>
     </div>
-<article class="fluid textContainer" id="secondaryStyling">
+</section>
+
+<section id="Projects-header">
+<article id="Project1" class="fluid textContainer" id="secondaryStyling">
 	<h1 class="h1-projects"><strong>Projects</strong></h1>
     <section class="fluid secondarySection zeroMargin_desktop zeroMargin_tablet" padding-left="5px">
       <h2 class="fluid secondaryHeading headingStyle">Project-Prosper IT Consulting</h2>
@@ -7391,7 +7429,7 @@ button.close {
       <p> The existing modal-content was not proportioned currently.  So, I resized the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/Modal-Content.php" title="modal" >modal</a>.
       <p align="left">To have the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/index.php" title="logo Modifications">logo</a> appear first and the website load after.  I added a fadeout statement after a 3 second delay which allow the logo appear and then fadeout to the webpage.</p>
 
-    </section>
+</section>
 
     <section class="fluid secondarySection hide_mobile">
 

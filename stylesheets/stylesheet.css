@@ -132,6 +132,25 @@ footer a {
   color: #F2F2F2;
   text-decoration: underline;
 }
+#header {
+	margin-top: 20px;
+	padding: 10px 0px 5px 0px;
+}
+
+#skills {
+	margin-top: 450px;
+	height: 200px;
+}
+#Experience {
+	margin-top: 75px;
+}
+
+#Projects-header {
+	text-align: center;
+	background-color: white;
+	margin-top: 75px;
+	opacity: .40%;
+}
 
 em {
   font-style: italic;
@@ -262,9 +281,10 @@ Full-Width Styles
 
 #forkme_banner {
   display: block;
-  position: absolute;
-  top:0;
-  right: -200px;
+  position: relative;
+  left: 650px;
+  top: -70px;
+  width: 175px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
@@ -276,10 +296,11 @@ Full-Width Styles
 }
 
 #forkme_banner:hover {
-	display: block;
-  position: absolute;
-  top:0;
-  right: -200px;
+  display: block;
+  position: relative;
+  left: 650px;
+  top: -70px;
+  width: 175px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #EC891B;
