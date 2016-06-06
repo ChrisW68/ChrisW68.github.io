@@ -49,17 +49,18 @@ Theme Styles
 *******************************************************************************/
 
 body {
-  background-image:url(../images/DSC02451.JPG);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+
 
 }
 
 skill-section, #skill-section {
 	filter: alpha(opacity=50);
   	opacity: .5;
+}
+
+experience-section, #experience-section {
+	background-color: white;
+	margin-top: 100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,16 +134,26 @@ footer a {
   text-decoration: underline;
 }
 #header {
+	background-image:url(../images/DSC02451.JPG);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 100%;
 	margin-top: 20px;
 	padding: 10px 0px 5px 0px;
 }
 
 #skills {
-	margin-top: 450px;
-	height: 200px;
+	margin-top: 250
+	px;
+	height: 265px;
+	background-color:#17CF49;
+}
+
+skill-section, #skill-section {
+	margin: inherit;
 }
 #Experience {
-	margin-top: 75px;
+	margin-top: 25px;
 }
 
 #Projects-header {

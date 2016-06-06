@@ -1162,8 +1162,6 @@ figure {
 @-webkit-keyframes spin { 25% { -webkit-transform: rotateX(20deg); } }
 @keyframes spin { 25% { -webkit-transform: rotateX(20deg); transform:rotatex(20deg); } }
   
- 
-}
 
 
 hr {
@@ -5346,7 +5344,7 @@ a.list-group-item-danger.active:focus {
   width: 300px;
   padding: 5px;
   margin: 0px;
-  background-color:#CFCBCB;
+  background-color:white;
   border-radius: 0px 0px 5px 5px;
 }
 
@@ -5361,7 +5359,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-heading {
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;

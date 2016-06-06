@@ -185,16 +185,18 @@ Theme Styles
 *******************************************************************************/
 
 body {
-  background-image:url(images/DSC02451.JPG);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+
 
 }
 
 skill-section, #skill-section {
 	filter: alpha(opacity=50);
   	opacity: .5;
+}
+
+experience-section, #experience-section {
+	background-color: white;
+	margin-top: 100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -268,16 +270,26 @@ footer a {
   text-decoration: underline;
 }
 #header {
+	background-image:url(images/DSC02451.JPG);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: 100%;
 	margin-top: 20px;
 	padding: 10px 0px 5px 0px;
 }
 
 #skills {
-	margin-top: 350px;
-	height: 250px;
+	margin-top: 250
+	px;
+	height: 265px;
+	background-color:#17CF49;
+}
+
+skill-section, #skill-section {
+	margin: inherit;
 }
 #Experience {
-	margin-top: 75px;
+	margin-top: 25px;
 }
 
 #Projects-header {
@@ -399,6 +411,8 @@ form {
   padding: 20px;
 }
 
+
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -416,11 +430,12 @@ Full-Width Styles
 
 #forkme_banner {
   display: block;
-  position: absolute;
-  top: 0px;
- position: absolute;
- right: 0px;
- padding: 10px 50px 10px 10px;
+  position: relative;
+  left: 650px;
+  top: -70px;
+  width: 175px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
@@ -430,10 +445,11 @@ Full-Width Styles
 }
 
 #forkme_banner:hover {
-	display: block;
+  display: block;
   position: relative;
-  top:0;
-  right: 20px;
+  left: 650px;
+  top: -70px;
+  width: 175px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #EC891B;
@@ -1746,12 +1762,19 @@ figure {
           transition: all .2s ease-in-out;
 }
 .img-circle {
-  border-radius: 80%;
+  border-radius: 120%;
   border: 2px ridge #ED9709;
   box-shadow: 0 3px 30px grey inset;
   width: 300px;
- 
+  margin-bottom: 50px;
+  -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
 }
+@-moz-keyframes spin { 25% { -moz-transform: rotateX(20deg); } }
+@-webkit-keyframes spin { 25% { -webkit-transform: rotateX(20deg); } }
+@keyframes spin { 25% { -webkit-transform: rotateX(20deg); transform:rotatex(20deg); } }
+  
 
 
 hr {
@@ -5912,8 +5935,8 @@ a.list-group-item-danger.active:focus {
 }
 .panel {
 	margin: 
-  width: 250px;
-  text-align:center;
+  width: 50px;
+  text-align:left;
   margin-bottom: 20px;
   opacity: .85;
   border-radius: 4px;
@@ -5933,7 +5956,8 @@ a.list-group-item-danger.active:focus {
   position: center;
   width: 300px;
   padding: 5px;
-  background-color:#CFCBCB;
+  margin: 0px;
+  background-color:white;
   border-radius: 0px 0px 5px 5px;
 }
 
@@ -5948,7 +5972,7 @@ a.list-group-item-danger.active:focus {
 }
 
 .panel-heading {
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -5968,7 +5992,7 @@ a.list-group-item-danger.active:focus {
   font-family: Arial;
   color: #ffffff;
   font-size: 18px;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 10px;
   text-decoration: none;
 }
 
@@ -5986,6 +6010,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-title {
   margin-top: 0;
+  position: center;
   margin-bottom: 0;
   font-size: 32px;
   color: inherit;
@@ -6198,11 +6223,12 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default {
   border-color:transparent;
+ 
 }
 .panel-default > .panel-heading {
   color: #333;
   background-color: #f5f5f5;
-  border-color: transparent;
+  border-color: semi-transparent;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ddd;
@@ -7260,23 +7286,33 @@ button.close {
 <body>
    <!-- HEADER -->
    <section id="header">
-	<div id="header_wrap" class="outer col-lg-5" width="full">
+	<div id="header_wrap" class="outer col-lg-12" width="full">
+            	<right><p class="text-right" color="green"><a href="images/ChrisWiseman-Resume.doc">Download my Resume <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></p></right>
+      	</div>
     	<header class="inner">
-        	<left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a>
-		    <center><img src="images/IMG_8665.jpg" alt="mypix" class="img-circle" title="myimage"/>
-            <li><h1 id="my_title" class="name">Chris Wiseman</h1></li>
-            <li><h2 class="occupation">Software Developer</h2></li>
+        	<left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a></left>
+            <center><img src="images/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="myimage"/></center>
+            <center><li><h1 id="my_title" class="name">Chris Wiseman</h1></li>
+            <li><h2 class="occupation">Software Developer</h2></li></center>
         </header>
     </div>
     </section>
-   <section id="skills" class="skill-section"> 
-   	<!-- MAIN CONTENT -->
+   
+   	<!-- MAIN CONTENT -->a
+  <section id="about" class="about-seciton col-sml-6">
+  <div>
+  	<center><h1>Hi there!</h1>
+    <p font-size="12px">I am a curious person that always seekings new learning experience.</p>
+    <p>I am a person that gets excited when problems arise and a solution to the problem must be solved quickly!</p></center>
+  </div>
+  </section>
+  <section id="skills" class="skill-section"> 
     <div>
     	<div class="panel panel-default">
     		<div class="panel-heading">
-        		<h3 class="panel-title">Skill</h3>
+        		<center><h3 class="panel-title">Skill</h3></center>
     		</div>
-           	<div class="panel-body-carousel col-md-3 col-lg-12">
+           	<center><div class="panel-body-carousel"></center>
         	<div class="carousel slide" data-ride="carousel">
           		<div class="carousel-inner" role="listbox">
             		<div class="item active"><img src="images/5.png" alt="First slide image" class="center-block">
@@ -7295,10 +7331,11 @@ button.close {
        		</div>
           
     	</div>
-        </div>
-        </section>
-<section id="Experience">
-<h3 class="panel-title">Experience</h3>
+       </div>
+      </div>
+</section>
+<section id="experience-section" class="experience-section">
+<h3 class="panel-heading2" class="panel-experience">Experience</h3>
 
 <div class="panel-group" id="accordion2">
       <div class="panel-group" id="accordion1">
