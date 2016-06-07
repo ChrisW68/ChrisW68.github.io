@@ -210,16 +210,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 36px;
   font-weight: 700;
-}
+  }
 
-h1-projects{
-	  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 92px;
-  padding: 80px 50px;
-  text-align: center;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
-  
+ 
   &.elegantshadow {
     color: #131313;
     background-color: #e7e5e4;
@@ -289,6 +282,7 @@ footer a {
 }
 #header {
 	background-image:url(images/DSC02451.JPG);
+	position:relative;
 	background-position: center;
 	background-repeat:no-repeat;
 	background-size: 100%;
@@ -446,18 +440,37 @@ Full-Width Styles
   margin: 0 auto;
 }
 
+#download-banner{
+  display: block;
+  position: relative;
+  margin: -10px;
+  left: 200px;
+  top: -10px;
+  width: 250px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #fff;
+  background:#0090ff no-repeat 95% 50%;
+  font-weight: 700;
+  font-color: white;
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+	
+}
+
 #forkme_banner {
   display: block;
   position: relative;
-  left: 650px;
-  top: -70px;
+  margin: 10px;
+  top: -50px;
   width: 175px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 5px 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
@@ -465,8 +478,7 @@ Full-Width Styles
 #forkme_banner:hover {
   display: block;
   position: relative;
-  left: 650px;
-  top: -70px;
+  top: -50px;
   width: 175px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
@@ -480,6 +492,10 @@ Full-Width Styles
 }
 
 #header_wrap {
+	background: #AEC3D3;
+	margin: -10px;
+	width: auto;
+	
 
 
 }
@@ -7304,13 +7320,14 @@ button.close {
 <body>
    <!-- HEADER -->
    <section id="header">
-	<div id="header_wrap" class="outer col-lg-12" width="full">
-            	<right><p class="text-right" color="green"><a href="images/ChrisWiseman-Resume.doc">Download my Resume 
+	<div id="header_wrap" class="outer" width="full">
+            	<a id="download-banner" href="images/ChrisWiseman-Resume.doc">Download my Resume 
                 <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></p></right>
+                <left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a></left>
       	</div>
     	<header class="inner">
-        	<left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a></left>
-            <center><img src="images/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="myimage"/></center>
+        	
+          <center><img src="images/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="myimage"/></center>
             <center><li><h1 id="my_title" class="name">Chris Wiseman</h1></li>
             <li><h2 class="occupation">Software Developer</h2></li></center>
         </header>
