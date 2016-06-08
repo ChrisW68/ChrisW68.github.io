@@ -29,6 +29,32 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+#container {
+	min-height: 100%;
+	position: relative;
+	height: 100%;
+}
+
+#body {
+	padding: 10px;
+	padding-bottom: 60px;  /* Height of the footer */
+}
+
+#footer{
+	position: absolute;
+	margin-top: 1200px;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: black;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -48,13 +74,6 @@ table {
 Theme Styles
 *******************************************************************************/
 
-body {
-
-
-}
-
-
-
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
@@ -69,7 +88,7 @@ h1 {
   }
 
  
-  &.elegantshadow {
+.elegantshadow {
     color: #131313;
     background-color: #e7e5e4;
     letter-spacing: .15em;
@@ -137,12 +156,24 @@ footer a {
   text-decoration: underline;
 }
 #header {
+	background-color:black;
+	width: 100%;
+	height: 0px;
+    padding-top: 10px;	
+}
+
+#container {
+	height: 100%
+}
+
+
+#main {
 	background-image:url(../images/DSC02451.JPG);
 	position:relative;
 	background-position: center;
 	background-repeat:no-repeat;
 	background-size: 100%;
-	margin-top: 20px;
+	margin-top: 0px;
 	padding: 10px 0px 5px 0px;
 }
 
@@ -186,6 +217,7 @@ skill-section, #skill-section {
 #Projects-header {
 	float: right;
 	width: 50%;
+	height: 1020px;
 	padding:5px;
 	text-align: center;
 	border-color:black;
@@ -208,36 +240,6 @@ occupation,.occupation{
 	align-content:center;
 }
 
-pre, code {
-  width: 100%;
-  color: #222;
-  background-color: #fff;
-
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
-
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-}
-
-pre {
-  width: 100%;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-  overflow: auto;
-}
-
-code {
-  padding: 3px;
-  margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-
-pre code {
-  display: block;
-  box-shadow: none;
-}
 
 blockquote {
   color: #666;
@@ -313,16 +315,7 @@ form {
 Full-Width Styles
 *******************************************************************************/
 
-.outer {
-  width: 100%;
-}
 
-.inner {
-  position: relative;
-  max-width: 640px;
-  padding: 20px 10px;
-  margin: 0 auto;
-}
 
 #download-banner{
   display: block;
@@ -377,13 +370,9 @@ Full-Width Styles
 
 #header_wrap {
 	background: #AEC3D3;
-	margin: -30px;
-	width: 102.25%;
+	margin: 0px;
+	width: full;
 	height: 32px;
-}
-
-#header_wrap .inner {
-  padding: 10px 10px 10px 10px;
 }
 
 #my_title {
@@ -460,12 +449,6 @@ Full-Width Styles
 #main_content {
   padding-top: 40px;
 }
-
-#footer_wrap {
-  background: #212121;
-}
-
-
 
 /*******************************************************************************
 Small Device Styles
