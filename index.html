@@ -19,29 +19,27 @@
 </head>
 
 <body>
+<div id="container">
    <!-- HEADER -->
-   <section id="header">
-	<div id="header_wrap" class="outer" width="full">
-            	<a id="download-banner" href="images/ChrisWiseman-Resume.doc">Download my Resume 
-                <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></p></right>
-                <left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a></left>
-      	</div>
-    	<header class="inner">
-        	
-          <center><img src="images/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="Chris Wiseman"/></center>
-            <center><h1 id="my_title" class="name">Chris Wiseman</h1>
-            <h2 class="occupation">Software Developer</h2></center>
-        </header>
-    </div>
-    </section>
-   
-   	<!-- MAIN CONTENT -->
+   <div id="header">
+		<a id="download-banner" href="images/ChrisWiseman-Resume.doc">Download my Resume 
+        <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+        <left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a></left>
+   </div>
+   <div  id="main">
+   		<center><img src="images/IMG_8665.jpg" alt="mypix" id="my_image" class="img-circle" title="Chris Wiseman"/></center>
+        <center><h1 id="my_title" class="name">Chris Wiseman</h1>
+        <h2 class="occupation">Software Developer</h2></center>
+   </div>
+<div id="body">   
+<!-- MAIN CONTENT -->
+
   <section id="about" class="about-seciton">
   	<div>
   		<center><h3>About me and what makes me happy!</h3>
   	  	<p font-size="10px">I'm curious by nature.  Enjoy being challenged and finding solutions to problems.<br>
-    	<p>I have a background in Manufacturing/Mechanical Engineer and want to use the skills I developed as<br>engineer to develop software.</p><br>
-    	<H4>When not programming:</H4> <p>I enjoy working on my house (always make it just a little more energy efficient), trying to grow something in my vegetable garden, and woodworking.</p><p>When I have time, I find new places to explore hiking/cross-country/canoeing/paddle boarding.</p></center>
+    	I have a background in Manufacturing/Mechanical Engineer and want to use the skills I developed as<br>engineer to develop software.</p><br>
+    	<h4>When not programming:</h4> <p>I enjoy working on my house (always make it just a little more energy efficient), trying to grow something in my vegetable garden, and woodworking. When I have time, I find new places to explore hiking/cross-country/canoeing/paddle boarding.</p></center>
   </div>
   </section>
   <section id="skills" class="skill-section"> 
@@ -70,9 +68,7 @@
              </div>
           
     	</div>
-       </div>
-   
-</section>
+ </section>
 <section id="experience-section" class="experience-section">
 	<div class="panel-heading">
         <center><h3 class="panel-title">Experience</h3></center>
@@ -191,12 +187,10 @@
 </section>
 
 <section id="Projects-header">
-<article id="Project1" class="fluid textContainer" id="secondaryStyling">
 	<h1 class="h1-projects"><strong>Projects</strong></h1>
-    <section class="fluid secondarySection zeroMargin_desktop zeroMargin_tablet" padding-left="5px">
       <h2 class="fluid secondaryHeading headingStyle">Project-Prosper IT Consulting</h2>
 
-      <h3 class="contentArea" align="center">This was my first project.  The project was to add more functionality to the companies webstite and reduce the memory useage and to make the website more visually appealing. </h3>
+      <p class="contentArea" align="center">This was my first project.  The project was to add more functionality to the companies webstite and reduce the memory useage and to make the website more visually appealing. </p>
       <h4><em>Task performed:</em></h4>
       <p align="left">Website had identical separate headers and footers for each webpage.  This reduced the memory useage per page by 30% on average</p>
       <p align="left">The customer wanted a video to autostart on initial load of webpage.</p>
@@ -205,30 +199,26 @@
       <p align="left">I wrote a two PHP scripts: one for the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/header.php">header</a> and one for the footer.  This allowed the website to the header and footer from one location</p>
       <p align="left">Added additional script to the video to have a automated time delay of 2 seconds to allow the page to load and then start the video.  I wrote the script in this way to reduce the memory useage and still allow the video to autostart</p>
       <p align="left"> The existing modal-content was not proportioned currently.  So, I resized the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/Modal-Content.php" title="modal" >modal</a>.</p>
-      <p align="left">To have the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/index.php" title="logo Modifications">logo</a> appear first and the website load after.  I added a fadeout statement after a 3 second delay which allow the logo appear and then fadeout to the webpage.</p></left>
-      <aside>
-
-</section>
-
-    <section class="fluid secondarySection hide_mobile">
+      <p align="left">To have the <a href="https://github.com/ChrisW68/LIVE-PROJECT-TECH-ACADEMY-WEBSITE/blob/master/newWebsite/index.php" title="logo Modifications">logo</a> appear first and the website load after.  I added a fadeout statement after a 3 second delay which allow the logo appear and then fadeout to the webpage.</p>
 
       <h2 class="fluid secondaryHeading headingStyle">Project-Portfolio</h2>
 
       <p class="contentArea">Wanted to create a single webpage to create a portfolio that used different languages (PHP, JavaScript, CSS3, HTML5)</p>
       <p align="center">Wanted to keep it simple but have some features that explores the different programming languages.</p>
-  </section>
-
-  </article>
-
+</section>
+</div>
+</div>
 
 
     <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
-      <footer class="inner">
+<!--
+  <div id="footer">
+      <footer>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
-    </div>
-
+  </div>
+</div>
+--!>
     
 
   <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
