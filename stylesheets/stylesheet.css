@@ -53,15 +53,7 @@ body {
 
 }
 
-skill-section, #skill-section {
-	filter: alpha(opacity=50);
-  	opacity: .5;
-}
 
-experience-section, #experience-section {
-	background-color: white;
-	margin-top: 275px;
-}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
@@ -164,9 +156,10 @@ footer a {
 	margin-top: -5px;
 	width: 60%;
 	height: 275px;
+	border-style: insert;
+	border-color:#ED8613;
 	background-color: #DADADA;
-	border-color: orange;
-}
+	}
 
 #skills {
 	float: right;
@@ -177,16 +170,28 @@ footer a {
 }
 
 skill-section, #skill-section {
+	filter: alpha(opacity=50);
+  	opacity: .5;
 	margin: inherit;
 }
-#Experience {
-	margin-top: 25px;
+
+
+#Experience, experience-section, #experience-section {
+	float: left;
+	width: 50%;
+	background-color: white;
+	margin-top: 2px;
 }
 
 #Projects-header {
+	float: right;
+	width: 50%;
+	padding:5px;
 	text-align: center;
-	background-color: white;
-	margin-top: 75px;
+	border-color:black;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #D4D4D4;
+	margin-top: 3px;
 	opacity: .40%;
 }
 
@@ -372,15 +377,13 @@ Full-Width Styles
 
 #header_wrap {
 	background: #AEC3D3;
-	margin: -10px;
-	width: auto;
-	
-
-
+	margin: -30px;
+	width: 102.25%;
+	height: 32px;
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 #my_title {

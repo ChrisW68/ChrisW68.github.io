@@ -1153,7 +1153,8 @@ figure {
   border: 2px ridge #ED9709;
   box-shadow: 0 3px 30px grey inset;
   width: 300px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   -webkit-animation:spin 3s linear infinite;
     -moz-animation:spin 3s linear infinite;
     animation:spin 3s linear infinite;
@@ -5399,6 +5400,7 @@ a.list-group-item-danger.active:focus {
   margin-top: 0;
   position: center;
   margin-bottom: 0;
+  height: 40px;
   font-size: 32px;
   color: inherit;
   text-shadow: 1px 2px 3px grey;
