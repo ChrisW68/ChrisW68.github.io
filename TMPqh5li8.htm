@@ -183,10 +183,10 @@ body {
 }
 
 #footer{
-	position: absolute;
-	margin-top: 1200px;
+	position: relative;
 	bottom: 0;
-	width: 100%;
+	margin-top: 1235px;
+	width: 99%;
 	height: 60px;
 	background: black;
 }
@@ -298,11 +298,6 @@ footer a {
     padding-top: 10px;	
 }
 
-#container {
-	height: 100%
-}
-
-
 #main {
 	background-image:url(images/DSC02451.JPG);
 	position:relative;
@@ -315,12 +310,12 @@ footer a {
 
 #about {
 	float:left;
-	padding-top:5px;
-	padding-left: 5px;
-	padding-right: 5px;
 	font-size: 12px;
+	padding: 5px;
 	font-color: #F3720E;
-	margin-top: -5px;
+	margin-left: -10px;
+	margin-top: -10px;
+	margin-bottom: auto;
 	width: 60%;
 	height: 275px;
 	border-style: insert;
@@ -332,7 +327,7 @@ footer a {
 	float: right;
 	padding: 5px;
 	width: 40%;
-	margin-top: 0px;;
+	margin-top: -15px;;
 	height: 265px;
 }
 
@@ -345,9 +340,11 @@ skill-section, #skill-section {
 
 #Experience, experience-section, #experience-section {
 	float: left;
+	margin-left:-5px;
 	width: 50%;
-	background-color: white;
-	margin-top: 2px;
+	padding: 5px;
+	background-color: #E4E4E4;
+	border-color: grey;
 }
 
 #Projects-header {
@@ -5990,17 +5987,16 @@ a.list-group-item-danger.active:focus {
 
 .panel-body-carousel {
   position: center;
-  width: 300px;
+  width: 100%;
   padding: 5px;
   margin: 0px;
   background-color:white;
-  border-radius: 0px 0px 5px 5px;
 }
 
 .panel-body2 {
   position: center;
   width: full;
-  padding: 15px;
+  padding: 5px;
   background-color:white;
   border-radius: 0px 0px 25px 25px;
   opacity: .95;
@@ -6013,34 +6009,24 @@ a.list-group-item-danger.active:focus {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background: #13deed;
-  background-image: -webkit-linear-gradient(top, #13deed, #2772a1);
-  background-image: -moz-linear-gradient(top, #13deed, #2772a1);
-  background-image: -ms-linear-gradient(top, #13deed, #2772a1);
-  background-image: -o-linear-gradient(top, #13deed, #2772a1);
-  background-image: linear-gradient(to bottom, #13deed, #2772a1);
+  background-image: -webkit-linear-gradient(top, #13deed, #054BAA);
+  background-image: -moz-linear-gradient(top, #13deed, #054BAA);
+  background-image: -ms-linear-gradient(top, #13deed, #054BAA);
+  background-image: -o-linear-gradient(top, #13deed, #054BAA);
+  background-image: linear-gradient(top, #13deed, #054BAA);
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
-  text-shadow: 1px 1.5px 3px grey;
-  -webkit-box-shadow: 1px 1.5px 3px grey;
-  -moz-box-shadow: 1px 1.5px 3px grey;
-  box-shadow: 0px 1px 3px grey;
+  text-shadow: .5px 1.5px 3px #B5B5B5;
+  -webkit-box-shadow: .5px 1.5px 3px #B5B5B5;
+  -moz-box-shadow: .5px 1.5px 3px #B5B5B5;
+  box-shadow: 0px 1px 3px #B5B5B5;
   font-family: Arial;
-  color: #ffffff;
+  color: black;
   font-size: 18px;
-  padding: 10px 20px 10px 10px;
-  text-decoration: none;
+  text-decoration:blink;
 }
 
-.panel-heading:hover {
-  background: #98eb2a;
-  background-image: -webkit-linear-gradient(top, #98eb2a, #13991c);
-  background-image: -moz-linear-gradient(top, #98eb2a, #13991c);
-  background-image: -ms-linear-gradient(top, #98eb2a, #13991c);
-  background-image: -o-linear-gradient(top, #98eb2a, #13991c);
-  background-image: linear-gradient(to bottom, #98eb2a, #13991c);
-  text-decoration: none;
-}
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
 }
@@ -7322,8 +7308,10 @@ button.close {
 
 <body>
 <div id="container">
+	<div>
    <!-- HEADER -->
    <div id="header">
+   
 		<a id="download-banner" href="images/ChrisWiseman-Resume.doc">Download my Resume 
         <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
         <left><a id="forkme_banner" href="https://github.com/ChrisW68">View on GitHub</a></left>
@@ -7348,7 +7336,7 @@ button.close {
     <div>
     	<div class="panel panel-default">
     		<div class="panel-heading">
-        		<center><h3 class="panel-title">Skill</h3></center>
+        		<center><h3 class="panel-title">Skills</h3></center>
     		</div>
            	<center><div class="panel-body-carousel"></center>
         		<div class="carousel slide" data-ride="carousel">
@@ -7513,14 +7501,16 @@ button.close {
 
 
     <!-- FOOTER  -->
-<!--
+
   <div id="footer">
       <footer>
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
   </div>
-</div>
---!>
+
+
+
+
     
 
   <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>

@@ -5342,17 +5342,16 @@ a.list-group-item-danger.active:focus {
 
 .panel-body-carousel {
   position: center;
-  width: 300px;
+  width: 100%;
   padding: 5px;
   margin: 0px;
   background-color:white;
-  border-radius: 0px 0px 5px 5px;
 }
 
 .panel-body2 {
   position: center;
   width: full;
-  padding: 15px;
+  padding: 5px;
   background-color:white;
   border-radius: 0px 0px 25px 25px;
   opacity: .95;
@@ -5365,34 +5364,24 @@ a.list-group-item-danger.active:focus {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background: #13deed;
-  background-image: -webkit-linear-gradient(top, #13deed, #2772a1);
-  background-image: -moz-linear-gradient(top, #13deed, #2772a1);
-  background-image: -ms-linear-gradient(top, #13deed, #2772a1);
-  background-image: -o-linear-gradient(top, #13deed, #2772a1);
-  background-image: linear-gradient(to bottom, #13deed, #2772a1);
+  background-image: -webkit-linear-gradient(top, #13deed, #054BAA);
+  background-image: -moz-linear-gradient(top, #13deed, #054BAA);
+  background-image: -ms-linear-gradient(top, #13deed, #054BAA);
+  background-image: -o-linear-gradient(top, #13deed, #054BAA);
+  background-image: linear-gradient(top, #13deed, #054BAA);
   -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px;
-  text-shadow: 1px 1.5px 3px grey;
-  -webkit-box-shadow: 1px 1.5px 3px grey;
-  -moz-box-shadow: 1px 1.5px 3px grey;
-  box-shadow: 0px 1px 3px grey;
+  text-shadow: .5px 1.5px 3px #B5B5B5;
+  -webkit-box-shadow: .5px 1.5px 3px #B5B5B5;
+  -moz-box-shadow: .5px 1.5px 3px #B5B5B5;
+  box-shadow: 0px 1px 3px #B5B5B5;
   font-family: Arial;
-  color: #ffffff;
+  color: black;
   font-size: 18px;
-  padding: 10px 20px 10px 10px;
-  text-decoration: none;
+  text-decoration:blink;
 }
 
-.panel-heading:hover {
-  background: #98eb2a;
-  background-image: -webkit-linear-gradient(top, #98eb2a, #13991c);
-  background-image: -moz-linear-gradient(top, #98eb2a, #13991c);
-  background-image: -ms-linear-gradient(top, #98eb2a, #13991c);
-  background-image: -o-linear-gradient(top, #98eb2a, #13991c);
-  background-image: linear-gradient(to bottom, #98eb2a, #13991c);
-  text-decoration: none;
-}
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
 }

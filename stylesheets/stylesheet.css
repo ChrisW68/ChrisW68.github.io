@@ -47,10 +47,10 @@ body {
 }
 
 #footer{
-	position: absolute;
-	margin-top: 1200px;
+	position: relative;
 	bottom: 0;
-	width: 100%;
+	margin-top: 1235px;
+	width: 99%;
 	height: 60px;
 	background: black;
 }
@@ -162,11 +162,6 @@ footer a {
     padding-top: 10px;	
 }
 
-#container {
-	height: 100%
-}
-
-
 #main {
 	background-image:url(../images/DSC02451.JPG);
 	position:relative;
@@ -179,12 +174,12 @@ footer a {
 
 #about {
 	float:left;
-	padding-top:5px;
-	padding-left: 5px;
-	padding-right: 5px;
 	font-size: 12px;
+	padding: 5px;
 	font-color: #F3720E;
-	margin-top: -5px;
+	margin-left: -10px;
+	margin-top: -10px;
+	margin-bottom: auto;
 	width: 60%;
 	height: 275px;
 	border-style: insert;
@@ -196,7 +191,7 @@ footer a {
 	float: right;
 	padding: 5px;
 	width: 40%;
-	margin-top: 0px;;
+	margin-top: -15px;;
 	height: 265px;
 }
 
@@ -209,9 +204,11 @@ skill-section, #skill-section {
 
 #Experience, experience-section, #experience-section {
 	float: left;
+	margin-left:-5px;
 	width: 50%;
-	background-color: white;
-	margin-top: 2px;
+	padding: 5px;
+	background-color: #E4E4E4;
+	border-color: grey;
 }
 
 #Projects-header {
